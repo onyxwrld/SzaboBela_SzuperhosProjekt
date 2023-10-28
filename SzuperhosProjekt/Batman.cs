@@ -38,8 +38,8 @@ namespace SzuperhosProjekt
         }
         public override string ToString()
         {
-            return $"Batman: lelemnényesség: {this.lelemenyesseg}";
+            return $"Batman: leleményesség: {this.lelemenyesseg}";
         }
-
+        
     }
 }

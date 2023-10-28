@@ -23,13 +23,17 @@ namespace SzuperhosProjekt
 
         public bool LegyoziE(ISzuperhos szuperhos)
         {
-            if (vanEGyengesege && szuperhos.MekkoraAzEreje()>this.Szuperero)
+            if (szuperhos is Batman && (this.szuperero*2) > szuperhos.MekkoraAzEreje())
+            {
+                return false;
+            }
+            else if (vanEGyengesege && szuperhos.MekkoraAzEreje()>this.Szuperero)
             {
                 return true;
             }
             else
             {
-                return false;
+                return true;
             }
         }
 
